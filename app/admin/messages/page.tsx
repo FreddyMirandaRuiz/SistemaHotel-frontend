@@ -42,9 +42,19 @@ export default function AdminMessagesPage() {
       <div className="max-w-6xl mx-auto">
         
         {/* BOTÓN REGRESAR */}
-        <Link href="/dashboard" className="text-slate-400 hover:text-blue-600 font-bold text-xs uppercase tracking-widest flex items-center gap-2 mb-6 transition-all">
-           ← Volver al Dashboard
+        <Link
+          href="/dashboard"
+          className="group inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-slate-500 mb-6"
+        >
+          <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-md transform transition-all duration-300 group-hover:-translate-x-1 group-hover:scale-105">
+           ←
+          </span>
+          <span className="group-hover:text-blue-600 transition-colors">
+          Volver
+          </span>
         </Link>
+
+        
 
         <div className="flex items-center justify-between mb-10">
           <h1 className="text-4xl font-black text-slate-900 tracking-tighter">Bandeja de Mensajes</h1>
